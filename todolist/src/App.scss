@@ -1,0 +1,19 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  position: fixed;
+  bottom: 0;
+  background-image: url('./assets/images/backdrop.png');
+  background-color: #87CEEB;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.title{
+  text-align: center;
+}
