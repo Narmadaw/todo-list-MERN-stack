@@ -1,0 +1,30 @@
+@use './../../styles/mixins' as *;
+
+.todo-list{
+    padding-left: 0;
+    height: 300px;
+    overflow: auto;
+    padding: 1rem 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    @include desktop{
+        height: 450px;
+    }
+    
+    &__item{
+        list-style: none; 
+        height: 36px;
+        display: flex;
+        align-items: center;
+        background-color: lightblue;
+        margin: 1rem 0;
+        padding-left: 0.5rem;
+        border-radius: 4px;
+        justify-content: space-between;
+        &--done{
+            text-decoration: line-through;
+        }
+    }
+    &__delete-icon{
+        padding-right: 1rem;
+    }
+}
