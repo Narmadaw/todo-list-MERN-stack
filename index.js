@@ -7,12 +7,12 @@ const mongoose = require('mongoose');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-// const {CORS_ORIGIN} = process.env;
+
 
 //middleware
 app.use(express.json());
 app.use(cors());
-// app.use(cors({origin: CORS_ORIGIN})); 
+
 
 //db
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
