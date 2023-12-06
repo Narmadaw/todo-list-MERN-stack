@@ -5,7 +5,9 @@ const todoModel = require("./../models/todo");
 const getTodoList = async (_req, res) =>{
     try{
         const todoList = await todoModel.find();
+        console.log(todoList);
         res.status(201).json(todoList);
+
     }catch(error){
         res.status(500).json({
             message: `Unable to create new task: ${error}`,
@@ -16,6 +18,7 @@ const getTodoList = async (_req, res) =>{
 //add new task
 const createTodoTask = async (req, res) =>{
     const {task} = req.body;
+    console.log(req.body);
     try{
         const newTask = await todoModel.create({task:task});
         res.status(201).json(newTask);
