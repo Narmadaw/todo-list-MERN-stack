@@ -1,1 +1,1 @@
-# todo-list-MERN-stack
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e92a7796-8165-4c43-b3a3-2bb31c3fad16/deploy-status)](https://app.netlify.com/sites/todobynarmada/deploys)
